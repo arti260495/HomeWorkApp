@@ -1,0 +1,76 @@
+public class Employee {
+    String fio;
+    String position;
+    String email;
+    String phoneNumber;
+    double wage;
+    int age;
+
+    public Employee(String fio, String position, String email, String phoneNumber, double wage, int age) {
+        this.fio = Fio;
+        this.position = position;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.wage = wage;
+        this.age = age;
+
+    }
+
+    public Employee() {
+        Fio = "ФИО сотрудника";
+        position = "Должность";
+        email = "email@gmail.com";
+        phoneNumber = "+7(999)-999-99-99";
+        wage = 9999;
+        age = 27;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ФИО: " + Fio
+                + " , Должность: " + position
+                + " , Email: " + email
+                + " , Номер телефона: " + phoneNumber
+                + " , Заработная плата: " + wage
+                + " , Возраст: " + age;
+    }
+
+    public static void main(String[] args) {
+        Employee[] arr = new Employee[5];
+        arr[0] = new Employee("Петров Василий Николаевич", "Слесарь", "petrov@gmail.com", "+7(819)746-433-45-67", 999999999, 55);
+        arr[1] = new Employee("Васильева Анастасия Дмитриевна", "Бухгалтер", "petrov@gmail.com", "+7(819)746-433-45-67", 999999999, 30);
+        arr[2] = new Employee("Соколов Фёдор Павлович", "Токарь", "petrov@gmail.com", "+7(819)746-433-45-67", 999999999, 34);
+        arr[3] = new Employee("Дроздов Анатолий Евгениевич", "Фрезеровщик", "petrov@gmail.com", "+7(819)746-433-45-67", 999999999, 20);
+        arr[4] = new Employee("Плотников Михаил Леонидович", "Шлифовщик", "petrov@gmail.com", "+7(819)746-433-45-67", 999999999, 18);
+
+        for (Employee a : arr) {
+            if (a.age > 40) {
+                System.out.println(a.toString());
+                System.out.println("------------");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
