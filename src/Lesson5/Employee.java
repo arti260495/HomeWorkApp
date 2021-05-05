@@ -1,13 +1,13 @@
 public class Employee {
-    String fio;
-    String position;
-    String email;
-    String phoneNumber;
-    double wage;
-    int age;
+   private String fio;
+   private String position;
+   private String email;
+   private String phoneNumber;
+   private double wage;
+   private int age;
 
     public Employee(String fio, String position, String email, String phoneNumber, double wage, int age) {
-        this.fio = Fio;
+        this.fio = fio;
         this.position = position;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -16,8 +16,32 @@ public class Employee {
 
     }
 
+    public String getFio() {
+        return fio;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public double getWage() {
+        return wage;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public Employee() {
-        Fio = "ФИО сотрудника";
+        fio = "ФИО сотрудника";
         position = "Должность";
         email = "email@gmail.com";
         phoneNumber = "+7(999)-999-99-99";
@@ -28,7 +52,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "ФИО: " + Fio
+        return "ФИО: " + fio
                 + " , Должность: " + position
                 + " , Email: " + email
                 + " , Номер телефона: " + phoneNumber
@@ -46,7 +70,7 @@ public class Employee {
 
         for (Employee a : arr) {
             if (a.age > 40) {
-                System.out.println(a.toString());
+                System.out.println(a);
                 System.out.println("------------");
             }
         }
